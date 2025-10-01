@@ -1,0 +1,150 @@
+/* === Стили для мобильных === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.header, .content, .footer {
+  width: 100%;
+}
+
+.header {
+  background-color: #3b6ea5;
+  color: white;
+  padding: 15px;
+  overflow: auto;
+}
+
+.logo {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.site-title {
+  float: left;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.menu {
+  float: right;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  font-weight: bold;
+}
+.header .menu {
+  display: flex;
+  gap: 20px;          /* увеличиваем расстояние между ссылками */
+  margin-right: 40px; /* сдвигаем меню немного левее от правого края */
+}
+
+/* Контент */
+.content {
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Порядок блоков для мобильных */
+#table { order: 1; }
+#links { order: 2; }
+#form { order: 3; }
+
+.block {
+  background: #e6f0ff;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* Таблица */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+}
+tr:nth-child(even) { background: #f9f9f9; }
+tr:nth-child(odd) { background: #ffe5e5; }
+
+/* Ссылки */
+.block#links ul li a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin: 4px 2px;
+}
+.block#links ul li a:hover { background-color: #104e8b; }
+
+/* Уменьшаем все изображения внутри блока ссылок */
+.block#links img {
+  max-width: 500px;  /* уменьшаем ширину */
+  height: auto;      /* сохраняем пропорции */
+  display: block;
+  margin: 10px 0;    /* отступы сверху и снизу */
+}
+
+/* Форма */
+form input, form textarea, form select {
+  width: 100%;
+  max-width: 400px;
+}
+form div { display: flex; align-items: center; margin-bottom: 10px; }
+form label { width: 150px; }
+form .radio-group { display: flex; gap: 20px; }
+form .radio { display: flex; align-items: center; }
+form .radio input[type="radio"] { margin-right: 5px; }
+button {
+  background: #3b6ea5;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto 0;
+}
+button:hover { background: #2a5279; }
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap; /* не переносить на новую строку */
+}
+
+/* Подвал */
+.footer {
+  width: 100%;
+  background: #3b6ea5;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* === Media Query для планшетов и десктопов === */
+@media screen and (min-width: 768px) {
+  .menu { flex-direction: row; }
+  .menu a { margin: 0 15px; }
+  
+  /* Восстанавливаем исходный порядок блоков */
+  #links { order: 1; }
+  #table { order: 2; }
+  #form { order: 3; }
+}
