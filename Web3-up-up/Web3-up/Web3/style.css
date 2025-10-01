@@ -47,8 +47,8 @@ body {
 }
 .header .menu {
   display: flex;
-  gap: 20px;          /* увеличиваем расстояние между ссылками */
-  margin-right: 40px; /* сдвигаем меню немного левее от правого края */
+  gap: 20px;          
+  margin-right: 40px; 
 }
 
 /* Контент */
@@ -92,12 +92,12 @@ tr:nth-child(odd) { background: #ffe5e5; }
 }
 .block#links ul li a:hover { background-color: #104e8b; }
 
-/* Уменьшаем все изображения внутри блока ссылок */
+
 .block#links img {
-  max-width: 500px;  /* уменьшаем ширину */
-  height: auto;      /* сохраняем пропорции */
+  max-width: 500px; 
+  height: auto;     
   display: block;
-  margin: 10px 0;    /* отступы сверху и снизу */
+  margin: 10px 0;    
 }
 
 /* Форма */
@@ -126,7 +126,7 @@ button:hover { background: #2a5279; }
   display: flex;
   align-items: center;
   gap: 10px;
-  white-space: nowrap; /* не переносить на новую строку */
+  white-space: nowrap; 
 }
 
 /* Подвал */
@@ -143,8 +143,9 @@ button:hover { background: #2a5279; }
   .menu { flex-direction: row; }
   .menu a { margin: 0 15px; }
   
-  /* Восстанавливаем исходный порядок блоков */
+  
   #links { order: 1; }
   #table { order: 2; }
   #form { order: 3; }
 }
+
