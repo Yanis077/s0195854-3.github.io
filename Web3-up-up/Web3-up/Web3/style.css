@@ -53,6 +53,7 @@ body {
 
 /* Контент */
 .content {
+  display: flex;
   flex-direction: column;
   padding: 10px;
 }
@@ -152,6 +153,7 @@ button:hover { background: #2a5279; }
   #table { order: 2; }
   #form { order: 3; }
 }
+
 
 
 
