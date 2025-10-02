@@ -138,6 +138,9 @@ button:hover { background: #2a5279; }
   text-align: center;
   padding: 10px 0;
 }
+ #table { order: 1; }
+ #links { order: 2; }
+ #form { order: 3; }
 
 /* === Media Query для планшетов и десктопов === */
 @media screen and (min-width: 768px) {
@@ -149,5 +152,6 @@ button:hover { background: #2a5279; }
   #table { order: 2; }
   #form { order: 3; }
 }
+
 
 
