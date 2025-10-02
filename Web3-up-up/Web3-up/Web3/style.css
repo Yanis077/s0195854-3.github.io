@@ -141,8 +141,7 @@ button:hover { background: #2a5279; }
 }
 
 /* === Media Query для планшетов и десктопов === */
-@media screen and (min-width: 768px).content {
-  flex-derection: column;
+@media screen and (min-width: 768px) {
   .menu { flex-direction: row; }
   .menu a { margin: 0 15px; }
   
@@ -151,6 +150,7 @@ button:hover { background: #2a5279; }
   #table { order: 2; }
   #form { order: 3; }
 }
+
 
 
 
