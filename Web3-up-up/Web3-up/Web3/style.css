@@ -59,8 +59,8 @@ body {
 }
 
 /* Порядок блоков для мобильных */
-#table { order: 1; }
-#links { order: 2; }
+#table { order: 2; }
+#links { order: 1; }
 #form { order: 3; }
 
 .block {
@@ -139,9 +139,6 @@ button:hover { background: #2a5279; }
   text-align: center;
   padding: 10px 0;
 }
- #table { order: 1; }
- #links { order: 2; }
- #form { order: 3; }
 
 /* === Media Query для планшетов и десктопов === */
 @media screen and (min-width: 768px) {
@@ -149,10 +146,11 @@ button:hover { background: #2a5279; }
   .menu a { margin: 0 15px; }
   
   
-  #links { order: 1; }
-  #table { order: 2; }
+  #links { order: 2; }
+  #table { order: 1; }
   #form { order: 3; }
 }
+
 
 
 
