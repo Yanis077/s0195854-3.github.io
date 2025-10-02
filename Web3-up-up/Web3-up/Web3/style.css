@@ -123,6 +123,7 @@ button {
 button:hover { background: #2a5279; }
 
 .checkbox-label {
+  width: auto !important;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -148,4 +149,5 @@ button:hover { background: #2a5279; }
   #table { order: 2; }
   #form { order: 3; }
 }
+
 
