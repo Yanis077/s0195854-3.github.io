@@ -59,8 +59,8 @@ body {
 }
 
 /* Порядок блоков для мобильных */
-#table { order: 1; }
-#links { order: 2; }
+#table { order: 2; }
+#links { order: 1; }
 #form { order: 3; }
 
 .block {
@@ -151,6 +151,7 @@ button:hover { background: #2a5279; }
   #table { order: 2; }
   #form { order: 3; }
 }
+
 
 
 
