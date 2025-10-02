@@ -51,17 +51,17 @@ body {
   margin-right: 40px; 
 }
 
+/* Порядок блоков для мобильных */
+#table { order: 2; }
+#links { order: 1; }
+#form { order: 3; }
+
 /* Контент */
 .content {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-
-/* Порядок блоков для мобильных */
-#table { order: 2; }
-#links { order: 1; }
-#form { order: 3; }
 
 .block {
   background: #e6f0ff;
@@ -150,6 +150,7 @@ button:hover { background: #2a5279; }
   #table { order: 2; }
   #form { order: 3; }
 }
+
 
 
 
